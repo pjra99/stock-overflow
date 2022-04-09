@@ -5,15 +5,15 @@ function SignIn() {
   const [pass, setPass] = useState("");
 
   function Validate() {
-    if (mail == "" && pass == "") {
+    if (mail === "" && pass === "") {
       alert("Email/password can't be empty!");
       return;
     }
-    if (mail == "") {
+    if (mail === "") {
       alert("Email Required!");
       return;
     }
-    if (pass == "") {
+    if (pass === "") {
       alert("Password Required!");
       return;
     }
@@ -23,7 +23,7 @@ function SignIn() {
     <div className="bg-background h-screen">
       <div className="text-center pt-10 text-xl italic">Stock Overflow</div>
       <div className="justify-center flex">
-        <div className="w-1/3 mt-24 h-80 rounded bg-white shadow-lg">
+        <div className="lg:w-1/3 w-screen lg:mx-0 md:w-96 md:mx-10 mx-2 mt-24 h-80 rounded bg-white shadow-lg">
           <div className="flex justify-center py-6 border-b border-lightgray text-xl">
             Login
           </div>

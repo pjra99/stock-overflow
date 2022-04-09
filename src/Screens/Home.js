@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Home() {
   const [reportVisibility, setReportVisibility] = useState("none");
 
   return (
     <div>
-      <div className="h-screen bg-white w-72 shadow-xl">
-        <div className="italic text-darkblue text-sm ml-5 mt-5 mb-5">
+      <div className="h-screen bg-white w-72 shadow-xl pr-10">
+        <div className="italic text-darkblue text-sm ml-5 mt-5 mb-5 ">
           Stock Overflow
         </div>
-        <div className="flex pl-6 pt-10 pb-2 w-56 ">
+        <div className="flex pl-6 pt-10 pb-2 ">
           <img src="user.svg" />
           <span className="ml-4">User</span>
           <img src="down-arrow.svg" className="ml-36" />
@@ -62,6 +63,9 @@ function Home() {
           <img src="chart.svg" />
           <span className="ml-3"> Portfolio</span>
         </div>
+        <Link to="signin">
+          <div className="float-right mt-64 text-lg">Log Out</div>
+        </Link>
       </div>
     </div>
   );

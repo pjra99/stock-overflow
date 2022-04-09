@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function SignIn() {
   const [mail, setMail] = useState("");
   const [pass, setPass] = useState("");
+  const navigate = useNavigate();
 
   function Validate() {
     if (mail === "" && pass === "") {
@@ -17,7 +19,7 @@ function SignIn() {
       alert("Password Required!");
       return;
     }
-    alert("Successful Login!");
+    navigate("/");
   }
   return (
     <div className="bg-background h-screen">

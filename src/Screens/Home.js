@@ -5,7 +5,9 @@ function Home() {
   return (
     <div>
       <div className="h-screen bg-white w-72 shadow-xl">
-        <div className="italic text-darkblue ml-5 mt-5">Stock Overflow</div>
+        <div className="italic text-darkblue text-sm ml-5 mt-5 mb-5">
+          Stock Overflow
+        </div>
         <div className="flex pl-6 pt-10 pb-2 w-56 ">
           <img src="user.svg" />
           <span className="ml-4">User</span>

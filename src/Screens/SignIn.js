@@ -39,7 +39,7 @@ function SignIn() {
               onChange={(e) => setMail(e.target.value)}
             />{" "}
           </div>
-          <div className="flex justify-center mt-3  pr-2">
+          <div className="flex justify-center mt-3 pr-2">
             <input
               type="password"
               className="password border border-gray w-2/3 py-2 rounded"

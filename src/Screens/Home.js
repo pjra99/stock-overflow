@@ -4,8 +4,8 @@ function Home() {
   const [reportVisibility, setReportVisibility] = useState("none");
 
   return (
-    <div>
-      <div className="h-screen bg-white w-72 shadow-xl pr-10">
+    <div className="flex">
+      <div className="h-screen bg-white w-1/3 shadow-xl pr-10 pl-7">
         <div className="italic text-darkblue text-sm ml-5 mt-5 mb-5 ">
           Stock Overflow
         </div>
@@ -59,7 +59,7 @@ function Home() {
           <img src="bucket.svg" />
           <span className="ml-4">Sip</span>
         </div>
-        <div className="flex pl-5 pt-5 py-2">
+        <div className="flex pl-5 pt-5 py-2 fi:mb-0 -mb-16">
           <img src="chart.svg" />
           <span className="ml-3"> Portfolio</span>
         </div>
@@ -73,6 +73,41 @@ function Home() {
             Log Out
           </div>
         </Link>
+      </div>
+      <div className="w-full px-20">
+        <div className="border-b border-gray py-5 mt-16 text-xl">Hi, User</div>
+        <div className="flex justify-between mt-20 mr-60">
+          <div>
+            Available Balance.
+            <div className="text-2xl text-darkblue font-semibold mt-5">
+              7802.32
+            </div>
+            <button className="py-2 px-5 mt-20 bg-green text-white rounded">
+              Buy Virtual Money
+            </button>
+          </div>
+          <div>
+            Profit
+            <div className="text-2xl text-green font-semibold mt-5">80.22</div>
+            <button className="py-2 px-5 bg-darkblue mt-20 text-white rounded">
+              Create Buckets
+            </button>
+          </div>
+          <div>
+            Money Invested in Virtual Money
+            <div className="text-2xl text-darkblue font-semibold mt-5">
+              2000.00
+            </div>
+          </div>
+        </div>
+        {/* <div className="flex mt-20">
+          <button className="py-2 px-5 bg-green text-white rounded">
+            Buy Virtual Money
+          </button>
+          <button className="py-2 px-5 bg-darkblue ml-10 text-white rounded">
+            Create Buckets
+          </button>
+        </div> */}
       </div>
     </div>
   );

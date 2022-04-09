@@ -29,13 +29,13 @@ function Home() {
           )}
         </div>
         <div
-          className="px-5 pt-2 pb-5"
+          className="pl-7 pt-2 pb-5"
           style={{
             display: reportVisibility,
           }}
         >
           <div className="pt-1 text-green font-semibold text-sm flex justify-between">
-            Goldbees <span>0.09%</span>
+            Goldbees <span className="ml-3">0.09%</span>
             <span>42.21</span>
           </div>
           <div className="pt-1 text-red font-semibold text-sm flex justify-between">
@@ -43,7 +43,7 @@ function Home() {
             <span>1518.6</span>
           </div>
           <div className="pt-1 text-green font-semibold text-sm flex justify-between">
-            Goldbees <span>0.09%</span>
+            Goldbees <span className="ml-3">0.09%</span>
             <span>42.21</span>
           </div>
           <div className="pt-1 text-red font-semibold text-sm flex justify-between">
@@ -64,7 +64,14 @@ function Home() {
           <span className="ml-3"> Portfolio</span>
         </div>
         <Link to="signin">
-          <div className="float-right mt-64 text-lg">Log Out</div>
+          <div
+            className="float-right text-lg"
+            style={{
+              marginTop: reportVisibility == "block" ? "130px" : "254px",
+            }}
+          >
+            Log Out
+          </div>
         </Link>
       </div>
     </div>

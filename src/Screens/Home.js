@@ -28,24 +28,24 @@ function Home() {
           )}
         </div>
         <div
-          className="px-5 pt-2"
+          className="px-5 pt-2 pb-5"
           style={{
             display: reportVisibility,
           }}
         >
-          <div className="pt-1 text-green font-bold text-sm flex justify-between">
+          <div className="pt-1 text-green font-semibold text-sm flex justify-between">
             Goldbees <span>0.09%</span>
             <span>42.21</span>
           </div>
-          <div className="pt-1 text-red font-bold text-sm flex justify-between">
+          <div className="pt-1 text-red font-semibold text-sm flex justify-between">
             HDFC Bank <span>-0.36%</span>
             <span>1518.6</span>
           </div>
-          <div className="pt-1 text-green font-bold text-sm flex justify-between">
+          <div className="pt-1 text-green font-semibold text-sm flex justify-between">
             Goldbees <span>0.09%</span>
             <span>42.21</span>
           </div>
-          <div className="pt-1 text-red font-bold text-sm flex justify-between">
+          <div className="pt-1 text-red font-semibold text-sm flex justify-between">
             HDFC Bank <span>-0.36%</span>
             <span>1518.6</span>
           </div>

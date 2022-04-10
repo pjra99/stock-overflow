@@ -12,7 +12,7 @@ function Home() {
         <div className="flex pl-6 pt-10 pb-2 ">
           <img src="user.svg" />
           <span className="ml-4">User</span>
-          <img src="down-arrow.svg" className="ml-36" />
+          {/* <img src="down-arrow.svg" className="ml-36" /> */}
         </div>
         <div
           className="flex pl-5 pt-5 py-2 w-56"
@@ -57,7 +57,7 @@ function Home() {
         </div>
         <div className="flex pl-5 pt-5 py-2">
           <img src="bucket.svg" />
-          <span className="ml-4">Sip</span>
+          <span className="ml-4">Buckets</span>
         </div>
         <div className="flex pl-5 pt-5 py-2 fi:mb-0 -mb-16">
           <img src="chart.svg" />
